@@ -11,9 +11,14 @@
     "date-fns-tz": "^2.0.0",
     "react-router-dom": "^6.21.0",
     "lucide-react": "^0.303.0",
+    "ajv": "6.12.6",
+    "npm-force-resolutions": "^0.0.10"
+  },
+  "resolutions": {
     "ajv": "6.12.6"
   },
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
