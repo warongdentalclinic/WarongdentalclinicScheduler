@@ -1,10 +1,9 @@
-// src/App.js
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { AuthProvider, useAuth } from './contexts/AuthContext';
-import LoginPage from './pages/LoginPage';
-import SchedulerPage from './pages/SchedulerPage';
-import SettingsPage from './pages/SettingsPage';
+import { AuthProvider, useAuth } from './contexts/AuthContext.jsx';
+import LoginPage from './pages/LoginPage.jsx';
+import SchedulerPage from './pages/SchedulerPage.jsx';
+import SettingsPage from './pages/SettingsPage.jsx';
 
 function PrivateRoute({ children }) {
   const { user } = useAuth();
